@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+            /*flex-wrap: wrap;*/
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .food{
+            border: 3px solid lightblue;
+            border-radius: 50px;
+            margin: 10px;
+            width: 350px;
+        }
+        .food img{
+            width: 100%;
+        }
+        @media (max-width:760px) {
+            .container{
+                flex-direction: column ;
+            }
+            .container .food{
+                background-color: red;
+            }}
+            @media (min-width:900px) {
+                 .container .food {
+                background-color: blue;
+                
+                 } 
+            }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eius distinctio dolorem quasi, molestiae tempore suscipit sapiente quidem quo magni.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Ex labore laboriosam esse officiis voluptates? Cumque, quas ex saepe excepturi facere fugiat rem et porro dolor temporibus vitae voluptatibus!</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Perferendis pariatur a architecto enim, excepturi eius quo asperiores rem facere ut! Molestias officiis consequuntur ducimus quis, reprehenderit harum animi.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Recusandae soluta cupiditate error, eligendi deleniti in itaque beatae quas repellat minus, expedita, enim velit illo consequuntur id? Et, iste.</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Dicta et ducimus voluptatum alias, minima facere necessitatibus quas excepturi vitae repellat tempore nisi quod culpa aperiam amet laborum atque!</p>
+        </div>
+        <div class="food">
+            <img src="images/food.jpeg" alt="">
+            <p>Nihil libero ex quia laboriosam ipsam qui? Rem perferendis quae pariatur facere debitis, quam, dicta aperiam harum, eligendi sed expedita?</p>
+        </div>
+    </div>
+</body>
+</html>
